@@ -11,9 +11,14 @@ refreshFrequency: 3000
 
 #Alfred workflow will be add in the repository
 
-#Command exemple : "python /usr/local/lib/python2.7/site-packages/markdown2.py --extras fenced-code-blocks,tables ~/Desktop/cheatsheet.txt"
+#Examples Of command (simple): 
+#Command: "python /usr/local/lib/python2.7/site-packages/markdown2.py --extras fenced-code-blocks,tables ~/Desktop/cheatsheet.txt"
 
-command: "python /usr/local/lib/python2.7/site-packages/markdown2.py --extras fenced-code-blocks,tables ~/Library/Application\\ Support/Notational\\ Data/\`cat ~/Desktop/CheatSheet/AlfredLauncher.txt\`"
+#With alfred :
+#command: "python /usr/local/lib/python2.7/site-packages/markdown2.py --extras fenced-code-blocks,tables ~/Library/Application\\ Support/Notational\\ Data/\`cat ~/Desktop/CheatSheet/AlfredLauncher.txt\`"
+
+#For testing 
+command: "echo \"#hello World \n Yo  \" | python /usr/local/lib/python2.7/site-packages/markdown2.py"
 
 style: """
   top: 5px //adjust to resize
