@@ -1,10 +1,23 @@
 refreshFrequency: 3000
 
-command: "python /usr/local/lib/python2.7/site-packages/markdown2.py --extras fenced-code-blocks,tables /Users/paul/Library/Application\\ Support/Notational\\ Data/\`cat /Users/paul/Desktop/CheatSheet/AlfredLauncher.txt\`"
+#To convert markdown to html
+#python /usr/local/lib/python2.7/site-packages/markdown2.py --extras fenced-code-blocks,tables
+#Visit [Extras · trentm/python-markdown2 Wiki](https://github.com/trentm/python-markdown2/wiki/Extras) for more information
+
+#And the path of your file "/Users/name/cheatsheet.txt"
+#A Path like "/Users/paul/Library/Application\ Support/" As to be like "/Users/paul/Library/Application\\ Support/"
+
+#I'am using a launch app to select wich cheatsheet i want to display in my desktop that's why i've got something like : "/Users/paul/Library/Application\\ Support/Notational\\ Data/\`cat /Users/jacksonfylle/Desktop/CheatSheet/AlfredLauncher.txt\`"
+
+#Alfred workflow will be add in the repository
+
+#Command exemple : "python /usr/local/lib/python2.7/site-packages/markdown2.py --extras fenced-code-blocks,tables ~/Desktop/cheatsheet.txt"
+
+command: "python /usr/local/lib/python2.7/site-packages/markdown2.py --extras fenced-code-blocks,tables /Users/paul/Library/Application\\ Support/Notational\\ Data/\`cat /Users/jacksonfylle/Desktop/CheatSheet/AlfredLauncher.txt\`"
 
 style: """
-  top: 5px
-  left: 440px
+  top: 5px //adjust to resize
+  left: 440px //adjust to resize
   color: #fff
   font-family: Helvetica Neue
   width 670px
@@ -18,7 +31,7 @@ style: """
     font-size: 24px
     font-weight: 100
 
-  .todolist
+  .cheatsheet
     display: block
     text-shadow: 0 0 1px rgba(#000, 0.5)
     font-size: 10px
@@ -73,11 +86,11 @@ style: """
     text-decoration:line-through
 """
 
-
+#select a css for the fenced code blocks
 render: -> """
-  <link rel="stylesheet" href="CheatSheet/solarized-dark.css">
-  <div class='todolist'></div>
+  <link rel="stylesheet" href="CheatSheet/solarized-dark.css"> 
+  <div class='cheatsheet'></div>
 """
 
 update: (output, domEl) ->
-  $(domEl).find('.todolist').html(output)
+  $(domEl).find('.cheatsheet').html(output)
