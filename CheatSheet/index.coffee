@@ -5,15 +5,15 @@ refreshFrequency: 3000
 #Visit [Extras · trentm/python-markdown2 Wiki](https://github.com/trentm/python-markdown2/wiki/Extras) for more information
 
 #And the path of your file "/Users/name/cheatsheet.txt"
-#A Path like "/Users/paul/Library/Application\ Support/" As to be like "/Users/paul/Library/Application\\ Support/"
+#A Path like "~/Library/Application\ Support/" As to be like "~/Library/Application\\ Support/"
 
-#I'am using a launch app to select wich cheatsheet i want to display in my desktop that's why i've got something like : "/Users/paul/Library/Application\\ Support/Notational\\ Data/\`cat /Users/jacksonfylle/Desktop/CheatSheet/AlfredLauncher.txt\`"
+#I'am using a launch app to select wich cheatsheet i want to display in my desktop that's why i've got something like : "~/Library/Application\\ Support/Notational\\ Data/\`cat ~/Desktop/CheatSheet/AlfredLauncher.txt\`"
 
 #Alfred workflow will be add in the repository
 
 #Command exemple : "python /usr/local/lib/python2.7/site-packages/markdown2.py --extras fenced-code-blocks,tables ~/Desktop/cheatsheet.txt"
 
-command: "python /usr/local/lib/python2.7/site-packages/markdown2.py --extras fenced-code-blocks,tables /Users/paul/Library/Application\\ Support/Notational\\ Data/\`cat /Users/jacksonfylle/Desktop/CheatSheet/AlfredLauncher.txt\`"
+command: "python /usr/local/lib/python2.7/site-packages/markdown2.py --extras fenced-code-blocks,tables ~/Library/Application\\ Support/Notational\\ Data/\`cat ~/Desktop/CheatSheet/AlfredLauncher.txt\`"
 
 style: """
   top: 5px //adjust to resize
