@@ -4,17 +4,20 @@ refreshFrequency: 3000
 #python /usr/local/lib/python2.7/site-packages/markdown2.py --extras fenced-code-blocks,tables
 #Visit [Extras · trentm/python-markdown2 Wiki](https://github.com/trentm/python-markdown2/wiki/Extras) for more information
 
-#And the path of your file "/Users/name/cheatsheet.txt"
+#And the path of your markdow file "/Users/name/cheatsheet.md"
 #A Path like "~/Library/Application\ Support/" As to be like "~/Library/Application\\ Support/"
 
-#I'am using a launch app to select wich cheatsheet i want to display in my desktop that's why i've got something like : "~/Library/Application\\ Support/Notational\\ Data/\`cat ~/Desktop/CheatSheet/AlfredLauncher.txt\`"
+#I'am using a launch app to select wich cheatsheet i want to display in my desktop.
+#Alfred let me select the name of the file i want to display and write his name in ~/Desktop/CheatSheet/AlfredLauncher.txt\
+#[Ubersicht/cheatsheet.alfredworkflow at master · jacksonfylle/Ubersicht](https://github.com/jacksonfylle/Ubersicht/blob/master/cheatsheet.alfredworkflow)
 
-#Alfred workflow will be add in the repository
+#Examples Of command without any launcher
+#Ubersicht read the markdown file ~/Desktop/cheatsheet.md
+#Command: "python /usr/local/lib/python2.7/site-packages/markdown2.py --extras fenced-code-blocks,tables ~/Desktop/cheatsheet.md"
 
-#Examples Of command (simple): 
-#Command: "python /usr/local/lib/python2.7/site-packages/markdown2.py --extras fenced-code-blocks,tables ~/Desktop/cheatsheet.txt"
-
-#With alfred :
+#With alfred workflow
+#Ubersicht display the file who is wrote in ~/Desktop/CheatSheet/AlfredLauncher.txt 
+#This file has to be in ~/Library/Application\ Support/Notational\ Data/
 #command: "python /usr/local/lib/python2.7/site-packages/markdown2.py --extras fenced-code-blocks,tables ~/Library/Application\\ Support/Notational\\ Data/\`cat ~/Desktop/CheatSheet/AlfredLauncher.txt\`"
 
 #For testing 
