@@ -2,7 +2,7 @@
 
 ##Markdown Preview
 Preview your markdown files in Ubersicht
-[Ubersicht/PicturesWidget.png at master · jacksonfylle/Ubersicht](https://github.com/jacksonfylle/Ubersicht/blob/master/PicturesWidget.png)
+![Ubersicht/PicturesWidget.png at master · jacksonfylle/Ubersicht](https://github.com/jacksonfylle/Ubersicht/blob/master/PicturesWidget.png)
 
 ##Installation
 
