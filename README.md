@@ -1,8 +1,11 @@
 # Ubersicht Widget
 
 ##Markdown Preview
-Preview your markdown files in Ubersicht
+###Select and preview your markdown files in Ubersicht
++ Click on a button to select a markdown file in your favorite folder
++ Or select it with Alfred Workflow
 ![Ubersicht/PicturesWidget.png at master · jacksonfylle/Ubersicht](https://github.com/jacksonfylle/Ubersicht/blob/master/PicturesWidget.png)
+
 
 ##Installation
 
