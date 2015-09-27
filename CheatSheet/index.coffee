@@ -131,6 +131,10 @@ afterRender: (domEl) ->                                             #
 
 update: (output, domEl) ->
   $(domEl).find('.cheatsheet').html(output)
+  $( "li:contains('(A)')" ).css({"color": "rgb(255, 71, 71)"})
+  $( "li:contains('(B)')" ).css({"color": "rgb(255, 168, 80)"})
+  $( "li:contains('(C)')" ).css({"color": "rgb(88, 189, 60)"})
+  $( "li:contains('(D)')" ).css({"color": "rgb(60, 160, 189)"})
 
 ########### 1.B Comment if you don't want to use selector ###########################################################################
   $(domEl).find('button').on 'click', => @run "echo " + event.target.id + " > ~/Desktop/Pro/Configuration/selectorFile.txt"       #
