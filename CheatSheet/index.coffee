@@ -1,4 +1,4 @@
-refreshFrequency: 300000
+refreshFrequency: 3000
 
 #   To use this widget you you need python-markdown2
 #   • Visit [Extras · trentm/python-markdown2 Wiki](https://github.com/trentm/python-markdown2/wiki/Extras) for more information
