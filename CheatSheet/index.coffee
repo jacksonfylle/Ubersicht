@@ -1,4 +1,4 @@
-refreshFrequency: 3000
+refreshFrequency: 300000
 
 #   To use this widget you you need python-markdown2
 #   • Visit [Extras · trentm/python-markdown2 Wiki](https://github.com/trentm/python-markdown2/wiki/Extras) for more information
@@ -31,9 +31,9 @@ refreshFrequency: 3000
 #   Normal Mode:
 #Command: "python /usr/local/lib/python2.7/site-packages/markdown2.py --extras fenced-code-blocks,tables ~/Desktop/your-file.md"
 #   Selector mode and Launcher Mode:
-# command: "python /usr/local/lib/python2.7/site-packages/markdown2.py --extras fenced-code-blocks,tables /Users/paul/Library/Application\\ Support/Notational\\ Data/\`cat /Users/paul/Desktop/Pro/Configuration/selectorFile.txt\`"
+command: "python /usr/local/lib/python2.7/site-packages/markdown2.py --extras fenced-code-blocks,tables /Users/paul/Library/Application\\ Support/Notational\\ Data/\`cat /Users/paul/Desktop/Pro/Configuration/selectorFile.txt\`"
 #   Test mode:
-command: "echo \"#hello World \n Yo  \" | python /usr/local/lib/python2.7/site-packages/markdown2.py"
+# command: "echo \"#hello World \n Yo  \" | python /usr/local/lib/python2.7/site-packages/markdown2.py"
 
 #   By default the selector mode is enable. Comment specified line below to disable.
 
@@ -118,6 +118,7 @@ style: """
 
 #select a css for the fenced code blocks
 render: -> """
+  <link rel="stylesheet" href="CheatSheet/solarized-dark.css">
   <div class='selector'></div>
   <div class='cheatsheet'></div>
 """
