@@ -31,9 +31,9 @@ refreshFrequency: 3000
 #   Normal Mode:
 #Command: "python /usr/local/lib/python2.7/site-packages/markdown2.py --extras fenced-code-blocks,tables ~/Desktop/your-file.md"
 #   Selector mode and Launcher Mode:
-command: "python /usr/local/lib/python2.7/site-packages/markdown2.py --extras fenced-code-blocks,tables /Users/paul/Library/Application\\ Support/Notational\\ Data/\`cat /Users/paul/Desktop/Pro/Configuration/selectorFile.txt\`"
+# command: "python /usr/local/lib/python2.7/site-packages/markdown2.py --extras fenced-code-blocks,tables /Users/paul/Library/Application\\ Support/Notational\\ Data/\`cat /Users/paul/Desktop/Pro/Configuration/selectorFile.txt\`"
 #   Test mode:
-# command: "echo \"#hello World \n Yo  \" | python /usr/local/lib/python2.7/site-packages/markdown2.py"
+command: "echo \"#hello World \n Yo  \" | python /usr/local/lib/python2.7/site-packages/markdown2.py"
 
 #   By default the selector mode is enable. Comment specified line below to disable.
 
