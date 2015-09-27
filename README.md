@@ -4,8 +4,12 @@
 ###Select and preview your markdown files in Ubersicht
 + Click on a button to select a markdown file in your favorite folder
 + Or select it with Alfred Workflow
-![Ubersicht/PicturesWidget.png at master · jacksonfylle/Ubersicht](https://github.com/jacksonfylle/Ubersicht/blob/master/PicturesWidget.png)
+![Ubersicht/PicturesWidget.png at master · jacksonfylle/Ubersicht](https://github.com/jacksonfylle/Ubersicht/blob/master/screenshot.png)
 
+### Todo list mode
+
+You can add "+ (A)" or "+ (B)" or "+ (C)" to add color
+![todolist](https://github.com/jacksonfylle/Ubersicht/blob/master/todolist.png)
 
 ##Installation
 
